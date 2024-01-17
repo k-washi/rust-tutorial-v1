@@ -9,12 +9,12 @@ services:
       - gid=1001
       - username=ruser
       - project_name=rustenv
-    container_name: rust-env-dev
-    image: rust-env-dev-image
+    container_name: rust-tutorial-v1-dev
+    image: rust-tutorial-v1-dev-image
     shm_size: '24gb'
     tty: true
     volumes: 
       - $PWD:/home/ruser/rustenv
     command: '/bin/bash'
     ports:
-      - 16681-16690:16681-16690
+      - 16581-16590:16581-16590
